@@ -17,11 +17,21 @@ RestApiDesafioDos.
 [x]6. Crear el archivo pojo “Photo” con los atributos id, title, url y thumbnail.
 [x]7. Crear la interfaz Api con el método GET de la lista de fotos del api.
 [X]8. Crear la clase cliente de Retrofit.
-[]9. Crear la clase PhotoAdapter con la implementación de ViewHolder y parametrización de los
+[x]9. Crear la clase PhotoAdapter con la implementación de ViewHolder y parametrización de los
 datos image y title, utilizando Picasso para la carga de la imagen en la vista imageView por cada
 elemento de la lista. y empleando Coil para la carga de imágenes.
-[]10. Modificar la clase de Actividad agregando un nuevo método loadApiData() e instanciando la clase
+[x]10. Modificar la clase de Actividad agregando un nuevo método loadApiData() e instanciando la clase
 Recyclerview y PhotoAdapter.
+
+// Añadir BBDD
+
+[X]Dependencias de Room
+[X]Crear entities
+[X]Crear DAO
+[X]Crear Database y Application
+[X]Declarar Application en el manifest
+[]Modificar la lógica para que los datoS de la API se lleven a la BBDD
+            []y el viewmodel obtenga los datos de la BBDD.
 
  */
 

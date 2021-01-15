@@ -6,7 +6,9 @@ import androidx.lifecycle.MutableLiveData
 
 class PhotoRepository {
 
-    val photoList= MutableLiveData<List<Photo>>()
+
+    val database=PhotoApplication.photoDatabase!!
+    val photoList= database.photoDao().getPhotos()
 
     suspend fun getPhotosfromApi(){
 
@@ -16,7 +18,7 @@ class PhotoRepository {
 
             true -> {
                 response.body()?.let {
-                    photoList.value = it
+                    database.photoDao().insertPhotos(it)
                     Log.d("Repo-getphotos", "getPhotosfromApi con :${it.size} fotos ")
                 }
 
